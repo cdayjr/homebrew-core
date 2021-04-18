@@ -18,7 +18,7 @@ class KubernetesCliAT117 < Formula
   deprecate! date: "2020-12-08", because: :deprecated_upstream
 
   depends_on "bash" => :build
-  depends_on "go" => :build
+  depends_on "go@1.15" => :build
 
   uses_from_macos "rsync" => :build
 

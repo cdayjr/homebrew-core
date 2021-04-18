@@ -12,7 +12,7 @@ class HelmAT34 < Formula
 
   deprecate! date: "2021-01-13", because: :deprecated_upstream
 
-  depends_on "go" => :build
+  depends_on "go@1.15" => :build
 
   def install
     # See https://github.com/helm/helm/pull/9486, remove with next release (3.5.4)
