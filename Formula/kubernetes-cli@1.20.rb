@@ -15,7 +15,6 @@ class KubernetesCliAT120 < Formula
 
   deprecate! date: "2021-04-18", because: :versioned_formula
 
-  depends_on "bash" => :build
   depends_on "go" => :build
 
   uses_from_macos "rsync" => :build
