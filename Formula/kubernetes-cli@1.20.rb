@@ -20,6 +20,12 @@ class KubernetesCliAT120 < Formula
 
   uses_from_macos "rsync" => :build
 
+  # ARM support, only officially available in 1.21+
+  patch do
+    url "https://github.com/kubernetes/kubernetes/commit/f719624654c68d143cad4e4af2f21cca0bfde8fd.patch?full_index=1"
+    sha256 "3d40308a2f639c1a45a2105889776f0d02dd97000c188bc4cc78de739d5f0776"
+  end
+
   def install
     # Don't dirty the git tree
     rm_rf ".brew_home"
@@ -47,8 +53,6 @@ class KubernetesCliAT120 < Formula
     assert_match "kubectl controls the Kubernetes cluster manager.", run_output
 
     version_output = shell_output("#{bin}/kubectl version --client 2>&1")
-
-    assert_match "GitTreeState:\"clean\"", version_output
 
     if build.stable?
       assert_match stable.instance_variable_get(:@resource)
