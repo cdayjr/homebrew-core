@@ -47,7 +47,9 @@ class KubernetesCliAT118 < Formula
     assert_match "kubectl controls the Kubernetes cluster manager.", run_output
 
     version_output = shell_output("#{bin}/kubectl version --client 2>&1")
+
     assert_match "GitTreeState:\"clean\"", version_output
+
     if build.stable?
       assert_match stable.instance_variable_get(:@resource)
                          .instance_variable_get(:@specs)[:revision],
