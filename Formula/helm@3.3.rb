@@ -5,8 +5,6 @@ class HelmAT33 < Formula
       tag:      "v3.3.4",
       revision: "a61ce5633af99708171414353ed49547cf05013d"
   license "Apache-2.0"
-  head "https://github.com/helm/helm.git",
-    branch: "release-3.3"
 
   keg_only :versioned_formula
 

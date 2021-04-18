@@ -5,8 +5,6 @@ class KubernetesCliAT117 < Formula
       tag:      "v1.17.17",
       revision: "f3abc15296f3a3f54e4ee42e830c61047b13895f"
   license "Apache-2.0"
-  head "https://github.com/kubernetes/kubernetes.git",
-    branch: "release-1.17"
 
   livecheck do
     url :stable
