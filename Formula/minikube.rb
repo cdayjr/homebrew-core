@@ -16,7 +16,6 @@ class Minikube < Formula
 
   depends_on "go" => :build
   depends_on "go-bindata" => :build
-  depends_on "kubernetes-cli"
 
   def install
     system "make"
