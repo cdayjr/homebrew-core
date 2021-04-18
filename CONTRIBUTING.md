@@ -2,7 +2,10 @@
 
 First time contributing to Homebrew? Read our [Code of Conduct](https://github.com/Homebrew/.github/blob/HEAD/CODE_OF_CONDUCT.md#code-of-conduct).
 
-Ensure your commits follow the [commit style guide](https://docs.brew.sh/Formula-Cookbook#commit). Please put the name of the formula first in your commit message, and modify only one formula per commit.
+If you are creating a pull request, ensure your commits follow the
+[commit style guide](https://docs.brew.sh/Formula-Cookbook#commit). Please put
+the name of the formula first in your commit message, and modify only one
+formula per commit.
 
 ### To report a bug
 
